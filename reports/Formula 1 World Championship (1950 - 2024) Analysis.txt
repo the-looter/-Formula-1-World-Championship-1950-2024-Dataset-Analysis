@@ -1,0 +1,122 @@
+Formula 1 World Championship (1950–2024) Dataset Analysis
+
+By: Mohammed Ammar Hussain
+Course: Bachelor of Computer Applications (BCA)
+College: St. Paul’s Degree and PG College, Hyderabad
+
+🧠 Objective
+
+The main objective of this project is to analyze the Formula 1 World Championship dataset (1950–2024) to uncover trends and insights related to drivers, constructors, races, and overall performance statistics.
+This analysis helps in understanding how Formula 1 has evolved over the years and which factors influence race outcomes and driver success.
+
+🧩 Dataset Overview
+
+The dataset used in this project contains multiple CSV files, each providing different information about Formula 1 from 1950 to 2024:
+
+circuits.csv – List of race circuits and their locations
+
+constructors.csv – Teams participating in Formula 1
+
+drivers.csv – Information about all drivers
+
+races.csv – Details of each race across all seasons
+
+results.csv – Race results for every event
+
+driver_standings.csv – Points and positions of drivers
+
+constructor_results.csv and constructor_standings.csv – Constructors’ performances
+
+lap_times.csv – Lap-by-lap timing data
+
+qualifying.csv – Qualifying session results
+
+pit_stops.csv – Pit stop timing data
+
+seasons.csv – Yearly overview of the Formula 1 seasons
+
+status.csv – Status codes describing race completion or failure reasons
+
+🧹 Data Cleaning Process
+
+To ensure accuracy, the dataset was cleaned and standardized before analysis.
+Key steps included:
+
+Handling Missing Values:
+
+Replaced missing or null time values in races and qualifying with 00:00:00.
+
+Removed newline characters (\n) from time columns.
+
+Dropping Irrelevant Columns:
+
+Dropped the “number” column from the drivers dataset due to excessive null values.
+
+Dropped the “points” column in constructor_results where data was incomplete.
+
+Verification:
+
+After cleaning, all datasets were checked for remaining nulls to ensure data integrity.
+
+📊 Data Analysis & Insights
+
+After cleaning, various analyses were performed using Python, Pandas, Matplotlib, and Seaborn.
+
+1. Nationality Analysis
+
+A bar plot created using Seaborn showed that British drivers have the highest participation rate in Formula 1 history.
+
+2. Lap Time Analysis
+
+From the lap_times.csv data:
+
+Fastest Lap: 0:55.404
+
+Slowest Lap: 9:45.712
+This highlights the performance differences across tracks and eras.
+
+3. Constructor Performance
+
+From the constructor standings:
+
+The highest performance recorded: 21 wins with 860 points.
+
+The lowest performance recorded: 6 points with 0 wins.
+This shows the wide range in competitiveness between top and bottom teams.
+
+4. Season Trends
+
+The seasons.csv dataset helped in analyzing Formula 1’s progression and expansion over time, indicating growth in the number of races and global reach.
+
+⚙️ Tools & Technologies Used
+
+Python (Jupyter Notebook)
+
+Pandas – Data manipulation and analysis
+
+Matplotlib & Seaborn – Visualization and insights
+
+NumPy – Numerical data operations
+
+🧾 Key Results
+
+The British nationality dominates Formula 1 participation.
+
+Clear identification of the fastest and slowest laps in recorded history.
+
+Constructors’ data shows large point differences, reflecting dominance by top teams.
+
+Clean and structured dataset ready for further predictive or trend-based analysis.
+
+🏁 Conclusion
+
+This project provided valuable insights into the history and performance trends of the Formula 1 World Championship (1950–2024).
+It demonstrates proficiency in:
+
+Data cleaning and preprocessing
+
+Data visualization and analysis
+
+Extracting meaningful insights from large, multi-file datasets
+
+The analysis can serve as a base for further advanced studies such as predictive modeling of race outcomes or driver performance forecasting using machine learning.
